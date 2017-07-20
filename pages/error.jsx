@@ -1,0 +1,31 @@
+import React from 'react';
+import Logo from '../components/logo';
+import Icon from '../components/icon';
+import Menu from '../components/menu';
+import Like from '../components/like';
+
+
+class Main extends React.Component{
+  render(){
+    return(
+      <div className="container">
+        <header className="header">
+          <Icon />
+          <Logo name='Alex' />
+        </header>
+        <nav className="navigation">
+          <Menu />
+
+        </nav>
+        <main className="content">
+          <p>Page not found</p>
+        </main>
+        <footer className="footer">
+          <p>&copy; 2017 Boris</p>
+        </footer>
+      </div>
+    );
+  }
+}
+
+export default Main;
